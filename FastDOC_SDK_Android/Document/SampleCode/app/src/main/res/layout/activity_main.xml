@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/uniform_invoice_25_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="電子發票"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/uniform_invoice_22_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="傳統發票"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uniform_invoice_25_button" />
+
+    <Button
+        android:id="@+id/taiwan_railway_ticketS_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="台鐵車票(直式)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uniform_invoice_22_button" />
+
+    <Button
+        android:id="@+id/taiwan_railway_ticketH_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="台鐵車票(橫式)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taiwan_railway_ticketS_button" />
+
+    <Button
+        android:id="@+id/thsr_ticket_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高鐵車票"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taiwan_railway_ticketH_button" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/normal_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="一般" />
+
+        <RadioButton
+            android:id="@+id/custom_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="客製" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

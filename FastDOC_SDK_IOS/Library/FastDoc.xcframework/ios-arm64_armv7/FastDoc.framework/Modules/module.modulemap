@@ -1,0 +1,6 @@
+framework module FastDoc {
+  umbrella header "FastDoc.h"
+
+  export *
+  module * { export * }
+}

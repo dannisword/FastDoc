@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulh-M3-slC">
+                                <rect key="frame" x="41.5" y="84" width="331" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="AEO-eD-osX"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="電子發票">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickUniformInvoiceFormat25:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mwn-qk-1Lx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N82-Iq-5S0">
+                                <rect key="frame" x="41.5" y="144" width="331" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="O2W-FZ-LjA"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="傳統發票">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickUniformInvoiceFormat22:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eja-YR-AOQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="az8-JE-uqQ">
+                                <rect key="frame" x="41.5" y="204" width="331" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UZk-Of-alS"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="台鐵車票(直式)">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickTaiwanRailwayTicketS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lq9-6m-ZPO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqH-6c-6uA">
+                                <rect key="frame" x="41.5" y="264" width="331" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EAv-W4-7c3"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="台鐵車票(橫式)">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickTaiwanRailwayTicketH:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LSL-Sp-sV4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9od-DJ-Z9b">
+                                <rect key="frame" x="41.5" y="324" width="331" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xda-Yw-YGU"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="高鐵車票">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickTHSRTicket:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rDB-eO-SuT"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="客制" translatesAutoresizingMaskIntoConstraints="NO" id="Su5-gE-4Fx">
+                                <rect key="frame" x="182.5" y="811" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="啟用客制" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSU-MU-YUG">
+                                <rect key="frame" x="251.5" y="816" width="69.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="az8-JE-uqQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="1Q8-rw-GZc"/>
+                            <constraint firstItem="hSU-MU-YUG" firstAttribute="centerY" secondItem="Su5-gE-4Fx" secondAttribute="centerY" id="4FA-un-pgY"/>
+                            <constraint firstItem="uqH-6c-6uA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9S6-I9-OBr"/>
+                            <constraint firstItem="N82-Iq-5S0" firstAttribute="top" secondItem="ulh-M3-slC" secondAttribute="bottom" constant="20" id="CAO-lb-xyu"/>
+                            <constraint firstItem="9od-DJ-Z9b" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="Gtb-xw-TSP"/>
+                            <constraint firstItem="ulh-M3-slC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="KJi-xx-wHQ"/>
+                            <constraint firstItem="az8-JE-uqQ" firstAttribute="top" secondItem="N82-Iq-5S0" secondAttribute="bottom" constant="20" id="P5o-8M-EYX"/>
+                            <constraint firstItem="ulh-M3-slC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="P9n-oP-pDg"/>
+                            <constraint firstItem="hSU-MU-YUG" firstAttribute="leading" secondItem="Su5-gE-4Fx" secondAttribute="trailing" constant="20" id="X81-Ar-hsO"/>
+                            <constraint firstItem="9od-DJ-Z9b" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aJj-AV-DNk"/>
+                            <constraint firstItem="N82-Iq-5S0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eTd-3N-KQY"/>
+                            <constraint firstItem="N82-Iq-5S0" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="gV0-vO-57N"/>
+                            <constraint firstItem="az8-JE-uqQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="h2q-6F-IBo"/>
+                            <constraint firstItem="uqH-6c-6uA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="lKJ-Lb-3hH"/>
+                            <constraint firstItem="uqH-6c-6uA" firstAttribute="top" secondItem="az8-JE-uqQ" secondAttribute="bottom" constant="20" id="sth-Oi-Zbu"/>
+                            <constraint firstItem="Su5-gE-4Fx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ugQ-nf-hxv"/>
+                            <constraint firstItem="ulh-M3-slC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="urO-Fe-pqF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Su5-gE-4Fx" secondAttribute="bottom" constant="20" id="wlp-0l-i5v"/>
+                            <constraint firstItem="9od-DJ-Z9b" firstAttribute="top" secondItem="uqH-6c-6uA" secondAttribute="bottom" constant="20" id="xN2-PQ-jcJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="switchCustom" destination="Su5-gE-4Fx" id="sZE-P9-kNY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="91"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

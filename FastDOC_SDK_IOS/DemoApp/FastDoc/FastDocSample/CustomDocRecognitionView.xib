@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomDocRecognitionViewController">
+            <connections>
+                <outlet property="bottomLabel" destination="9yI-s2-oGV" id="Wci-Mf-AFa"/>
+                <outlet property="titleLabel" destination="pRL-r4-twX" id="dPh-fF-3qt"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Rhc-cp-plp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVo-d5-e4c" userLabel="CameraView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="732"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYZ-19-avh" userLabel="TakeBoxView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="732"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="請對齊輔助框，並按下拍照鈕" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yI-s2-oGV" userLabel="BottomLabel">
+                    <rect key="frame" x="68" y="733" width="290" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRL-r4-twX" userLabel="TitleLabel">
+                    <rect key="frame" x="210" y="103" width="0.0" height="0.0"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mxk-Er-S97" userLabel="QRCodeView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="732"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="8" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="custom_qrcode2" translatesAutoresizingMaskIntoConstraints="NO" id="SNH-Pd-Jf8" userLabel="QRCodeImage2">
+                            <rect key="frame" x="222" y="491" width="138" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="7" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="custom_qrcode1" translatesAutoresizingMaskIntoConstraints="NO" id="k8E-Gk-N1D" userLabel="QRCodeImage1">
+                            <rect key="frame" x="67" y="491" width="130" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wYh-cP-Kbp" userLabel="ActionView">
+                    <rect key="frame" x="0.0" y="776" width="414" height="120"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFm-x1-zIB" userLabel="TakeButton">
+                            <rect key="frame" x="182" y="35" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="rFm-x1-zIB" secondAttribute="height" multiplier="1:1" id="6y5-3g-roU"/>
+                                <constraint firstAttribute="width" constant="50" id="Ozn-Zr-WCK"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="custom_takephoto"/>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFq-UA-Cpb" userLabel="CancelButton">
+                            <rect key="frame" x="324" y="35" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="YNf-LE-Mg1"/>
+                                <constraint firstAttribute="width" secondItem="iFq-UA-Cpb" secondAttribute="height" multiplier="1:1" id="ee8-WV-HZT"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="custom_cancel"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="iFq-UA-Cpb" firstAttribute="centerY" secondItem="wYh-cP-Kbp" secondAttribute="centerY" id="4bS-bv-fXK"/>
+                        <constraint firstAttribute="trailing" secondItem="iFq-UA-Cpb" secondAttribute="trailing" constant="40" id="Bav-D9-S8U"/>
+                        <constraint firstItem="rFm-x1-zIB" firstAttribute="centerX" secondItem="wYh-cP-Kbp" secondAttribute="centerX" id="etX-Ex-YVg"/>
+                        <constraint firstAttribute="height" constant="120" id="i3J-j4-O7d"/>
+                        <constraint firstItem="rFm-x1-zIB" firstAttribute="centerY" secondItem="wYh-cP-Kbp" secondAttribute="centerY" id="kxy-nK-yEd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="UYZ-19-avh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="9Kr-iM-OQj"/>
+                <constraint firstItem="wYh-cP-Kbp" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="BGa-23-ZKq"/>
+                <constraint firstItem="wYh-cP-Kbp" firstAttribute="top" secondItem="Mxk-Er-S97" secondAttribute="bottom" id="BWD-Dk-3Yb"/>
+                <constraint firstItem="UYZ-19-avh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GfY-P2-rCN"/>
+                <constraint firstItem="wYh-cP-Kbp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="JnL-KM-61Z"/>
+                <constraint firstItem="lVo-d5-e4c" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="SfB-ii-8gG"/>
+                <constraint firstItem="Mxk-Er-S97" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="aNj-jo-h9b"/>
+                <constraint firstAttribute="bottom" secondItem="wYh-cP-Kbp" secondAttribute="bottom" id="cAj-Mg-h4M"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UYZ-19-avh" secondAttribute="trailing" id="cwl-6K-94y"/>
+                <constraint firstItem="Mxk-Er-S97" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="e5E-jG-SZE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Mxk-Er-S97" secondAttribute="trailing" id="fmp-3e-zfB"/>
+                <constraint firstItem="wYh-cP-Kbp" firstAttribute="top" secondItem="lVo-d5-e4c" secondAttribute="bottom" id="fyk-Ak-dwy"/>
+                <constraint firstItem="wYh-cP-Kbp" firstAttribute="top" secondItem="UYZ-19-avh" secondAttribute="bottom" id="gYU-9z-sgA"/>
+                <constraint firstItem="lVo-d5-e4c" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qeI-wz-EZR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lVo-d5-e4c" secondAttribute="trailing" id="uMj-bN-yHa"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="125.89285714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="custom_cancel" width="256" height="256"/>
+        <image name="custom_qrcode1" width="256" height="256"/>
+        <image name="custom_qrcode2" width="256" height="256"/>
+        <image name="custom_takephoto" width="256" height="256"/>
+    </resources>
+</document>

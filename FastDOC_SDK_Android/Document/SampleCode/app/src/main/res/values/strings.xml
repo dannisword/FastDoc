@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FastDocSampleCode</string>
+    <string name="fast_doc_box_title" >範例標題</string>
+    <string name="fast_doc_box_hint">範例提示</string>
+</resources>
